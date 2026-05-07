@@ -21,6 +21,10 @@ jobs:
 
       - name: Testing unit of code
         run: npm test
+
+      - name: Listing the files
+        run: ls
+
       - uses: actions/upload-artifact@v7
         with:
           name: test-report
