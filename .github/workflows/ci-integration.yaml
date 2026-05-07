@@ -1,0 +1,23 @@
+name: ci-integration
+
+on:
+  push:
+
+jobs:
+  ci-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout stage
+        uses: actions/checkout@v4
+
+      - name: Installing the node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '>=10.15.0'
+
+      - name: Installing the dependency
+        run: npm install 
+
+      - name: Testing unit of code
+        run: npm test
