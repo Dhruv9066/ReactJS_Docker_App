@@ -7,19 +7,17 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome To Ashok IT...!!
+          Welcome To DHRUV IT...!!
         </p>
         <a
           className="App-link"
-          href="https://ashokitech.com/"
+          href="https://google.com/"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
          Visit Our Website
         </a>
       </header>
     </div>
   );
 }
-
 export default App;
