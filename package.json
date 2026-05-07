@@ -17,12 +17,12 @@
     "jest-junit": "^16.0.0"
   },
 
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test:ci": "react-scripts test --watchAll=false",
-    "eject": "react-scripts eject"
+ "scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "test:ci": "react-scripts test --watchAll=false --coverage",
+  "coverage": "npm run test:ci"
   },
 
   "jest-junit": {
@@ -50,3 +50,4 @@
     ]
   }
 }
+

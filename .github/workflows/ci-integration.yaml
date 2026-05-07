@@ -29,3 +29,6 @@ jobs:
         with:
           name: test-report
           path: reports/junit.xml
+
+      - name: running a coverage
+        run: npm run coverage
