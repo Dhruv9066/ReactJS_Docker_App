@@ -20,7 +20,7 @@ jobs:
         run: npm install 
 
       - name: Testing unit of code
-        run: npm test
+        run: CI=true npm test -- --watchAll=false --reporters=default --reporters=jest-junit
 
       - name: Listing the files
         run: ls
